@@ -1,0 +1,33 @@
+<html>
+<head>
+    <!--LeadSquared Tracking Code Start-->
+<script type="text/javascript" src="https://web-in21.mxradon.com/t/Tracker.js"></script>
+<script type="text/javascript">
+      pidTracker('58009');
+</script>
+<!--LeadSquared Tracking Code End-->
+	<title>
+		AAFT
+	</title>
+	<meta http-equiv="Refresh" content="0; url=https://aaft.edu.in" />
+	<style>
+	* { font-family: verdana; font-size: 10pt; COLOR: gray; }
+	b { font-weight: bold; }
+	table { height: 50%; border: 1px solid gray;}
+	td { text-align: center; padding: 25;}
+
+	</style>
+</head>
+<body>
+<center>
+<br><br><br><br>
+	<table>
+	<tr><td>Welcome to <b>aaft.edu.in</b></td></tr>
+	<tr><td>Please wait...</td></tr>
+	</table>
+<br><br>
+
+</center>
+</body>
+
+</html>

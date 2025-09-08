@@ -1,0 +1,6 @@
+.part11{display:none;}
+
+@media only screen and (max-width:640px){
+    .part1{display:block;}
+    .part2{display: none;}
+}

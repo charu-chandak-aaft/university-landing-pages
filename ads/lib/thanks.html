@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Thanks</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>body{background:#FFF;}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="2; http://aaft.com/" />
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '554725094682349');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=554725094682349&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- G T M -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5RPZKS7');</script>
+<!-- End G T M -->
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+</script>
+
+<script>
+  let passEmailOnScript = sessionStorage.getItem('email');
+  dataLayer.push({
+    'event':'enhanced_lead',
+    'enhanced_conversion_data': {
+      "email": passEmailOnScript 
+    }
+  })
+	
+</script>
+</head>
+
+<!-- Code only for thanks page for  lp(fb) -->
+<script>
+  fbq('track', 'Lead');
+</script>
+
+<body onload="hitBothApi()">
+
+<div class="thanks" style="width:100%">
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4"><img src="thanks.jpg" width="100%" alt=""/></div>
+<div class="col-sm-4"></div>
+</div>
+</div>
+
+<!-- G T M (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5RPZKS7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End G T M (noscript) -->
+
+<script>
+
+function hitApi() {
+  //var mob = document.getElementById("txtPhoneCon").value;
+  var xhttp = new XMLHttpRequest();
+
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        //alert(this.responseText);
+        //document.getElementById("otpmsg").innerHTML = this.responseText;
+    }
+  };
+
+  xhttp.open("GET", "https://aaft.com/ad/lib/lead_api_noida_courselp.php", true); //for enquiry form
+
+  xhttp.send();
+  //alert("http://aaft.com/assets/number_varification.php?mode="+mod+"&mobile="+mob+"&otp="+otp);
+}
+	
+function hitApiBroch() {
+  //var mob = document.getElementById("txtPhoneCon").value;
+  var xhttp = new XMLHttpRequest();
+
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        //alert(this.responseText);
+        //document.getElementById("otpmsg").innerHTML = this.responseText;
+    }
+  };
+
+  xhttp.open("GET", "https://aaft.com/ad/lib/lead_api_noida_courselp_broch.php", true); //for enquiry form
+
+  xhttp.send();
+  //alert("http://aaft.com/assets/number_varification.php?mode="+mod+"&mobile="+mob+"&otp="+otp);
+}
+	
+function hitBothApi() {
+	hitApi();
+	hitApiBroch();
+}
+</script>
+</body>
+</html>
