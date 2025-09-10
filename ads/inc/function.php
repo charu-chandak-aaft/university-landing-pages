@@ -54,10 +54,10 @@ function getBaseURL()
 	$baseURL = $_SERVER['SERVER_NAME'];
 	return $baseURL;
 }
-
 function Connection()
 {
-	$servername = "localhost";
+	$servername = "127.0.0.1";  //for local
+	// $servername = "localhost";  // for dev
 	$username = "universityuser";
 	$password = "StrongPassword123";
 	$dbname = "universitylp";
