@@ -10,7 +10,7 @@
 				</div>
 				<div class="col-6">
 					<a href="https://api.whatsapp.com/send/?phone=918447006467&text=Hi, I would like to know more about bba-llb degree program" class="chatbot"><i class="bi bi-whatsapp"></i> Whatsapp</a>
-					<!--<a href="#enquire" class="chatbot"><i class="bi bi-chat-square-text-fill"></i> ENROLL NOW</a>-->
+					<!--<a href="#enquire" class="chatbot"><i class="bi bi-chat-square-text-fill"></i> INQUIRE NOW</a>-->
 				</div>
 			</div>
 		</div>

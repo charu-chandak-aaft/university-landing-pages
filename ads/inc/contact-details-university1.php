@@ -13,7 +13,7 @@ if (date('H:i:s') > "10:00:00" && date('H:i:s') < "18:00:00") { ?>
 				<div class="col-6">
 					<!--<a href="https://wa.me/919109007658" class="chatbot"><i class="bi bi-whatsapp"></i> Whatsapp</a>-->
 					<!--<a href="https://api.whatsapp.com/send/?phone=919109208560&text=Hi, I would like to know more about bba-llb degree program" class="chatbot"><i class="bi bi-whatsapp"></i> Whatsapp</a>-->
-					<a href="#enquire" class="chatbot"><i class="bi bi-chat-square-text-fill"></i> ENROLL NOW</a>
+					<a href="#enquire" class="chatbot"><i class="bi bi-chat-square-text-fill"></i> INQUIRE NOW</a>
 				</div>
 			</div>
 		</div>
@@ -25,7 +25,7 @@ if (date('H:i:s') > "10:00:00" && date('H:i:s') < "18:00:00") { ?>
 				<div class="col-12">
 					<!--<a href="https://wa.me/919109007658" class="chatbot"><i class="bi bi-whatsapp"></i> Whatsapp</a>-->
 					<!--<a href="https://api.whatsapp.com/send/?phone=919109208560&text=Hi, I would like to know more about bba-llb degree program" class="chatbot"><i class="bi bi-whatsapp"></i> Whatsapp</a>-->
-					<a href="#enquire" class="chatbot"><i class="bi bi-chat-square-text-fill"></i> ENROLL NOW</a>
+					<a href="#enquire" class="chatbot"><i class="bi bi-chat-square-text-fill"></i> INQUIRE NOW</a>
 				</div>
 			</div>
 		</div>

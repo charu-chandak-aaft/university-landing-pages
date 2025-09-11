@@ -20,7 +20,7 @@ function GetProgramDropU($st){
 	$program=array();
 	$conn=ConnectionAws();
 	//$sql1 = "SELECT id, name, state_id FROM district WHERE name like '$ct%' and code='$st' and status=1";
-	$sql1 = "SELECT id, name, school_id FROM programs WHERE school_id='$st' and status=1";
+	$sql1 = "SELECT id, name, school_id, duration FROM programs WHERE school_id='$st' and status=1";
 	$result1 = $conn->query($sql1);
 	if ($result1->num_rows > 0) {
 	// output data of each row

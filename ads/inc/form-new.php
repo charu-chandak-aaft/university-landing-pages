@@ -1,5 +1,26 @@
 <?php
 include("form-scripts.php");
+function getUserIP() {
+    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+    } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    } else {
+        $ip = $_SERVER['REMOTE_ADDR'];
+    }
+    return $ip;
+}
+$userIP = getUserIP();
+// $userIP = '103.191.183.74';
+$url = "http://ip-api.com/json/$userIP";
+$json = file_get_contents($url);
+$data = json_decode($json, true);
+if ($data['status'] === 'success') {
+    $state = $data['regionName'];
+    if($state == 'National Capital Territory of Delhi')
+        $state = 'Delhi';
+    $city = $data['city'];
+}
 ?>
 <script>
 	//sessionStorage.setItem('email', 'help@aaft.com');
@@ -91,27 +112,12 @@ include("form-scripts.php");
 		
 		<div class="form-group">
 			<label>SELECT STATE*</label>
-           <select name="State" required class="register-input-box" id="id_State" onChange="setBlank()">
-		      <option value="" selected="selected">Select State*</option>
-		      <?php
-		      $state=GetStateDrop();
-		      $stateCnt=count($state);
-		      $i=0;
-		      while ($i<$stateCnt)
-		      {
-		        echo "<option value=".$state[$i]['code'].">".$state[$i]['name']."</option>";
-		        $i++;
-		      }
-		      ?>
-		    </select>
+			<input name="State" type="hidden" id="id_State" required>
 		</div>
 
 		<div class="form-group">
 			<label>SELECT CITY*</label>
-            <select name="City" required class="register-input-box" id="id_City">
-		      <option value="" selected="selected">Select City*</option>
-		      <option value="">Select State First*</option>
-		    </select>
+			<input name="City" type="hidden" id="id_City" required>
 		</div>
 		<div class="form-group">
 			<div class="checkbox">
@@ -128,3 +134,7 @@ include("form-scripts.php");
 	<!--</form>-->
 	</div>
 </div>
+<script>
+    document.getElementById("id_State").value = "<?= $state; ?>";
+    document.getElementById("id_City").value = "<?= $city; ?>";
+</script>
