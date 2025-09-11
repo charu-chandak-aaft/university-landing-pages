@@ -57,7 +57,7 @@ function getBaseURL()
 function Connection()
 {
 	// $servername = "127.0.0.1";  //for local
-	$servername = "139.59.16.155";  // for dev
+	$servername = "localhost";  // for dev
 	$username = "universityuser";
 	$password = "StrongPassword123";
 	$dbname = "universitylp";
