@@ -99,7 +99,7 @@ function InsertFormData($v1, $v2, $v3, $v4, $v5, $v6, $v7, $v8, $v9, $v10, $v11,
 {
 	$state_name = "";
 	$conn = Connection();
-	$sql1 = "INSERT INTO lp_enquery_data (name, contact, email, course, qualification, state, city, school, pageName, otp, remark, map, utm_source, utm_medium, utm_campaign, utm_content, utm_term, utm_creative, utm_campaignid, utm_adgroupid, utm_creativeid, utm_matchtype, utm_device, utm_network, utm_keyword, utm_placement, gclid) VALUES ('$v1','$v2','$v3','$v4','$v5','$v6','$v7','$v8','$v9','$v10','$v11','$v12','$v13','$v14','$v15','$v16','$v17','$v18','$v19','$v20','$v21','$v22','$v23','$v24','$v25','$v26','$v27')";
+	echo $sql1 = "INSERT INTO lp_enquery_data (name, contact, email, course, qualification, state, city, school, pageName, otp, remark, map, utm_source, utm_medium, utm_campaign, utm_content, utm_term, utm_creative, utm_campaignid, utm_adgroupid, utm_creativeid, utm_matchtype, utm_device, utm_network, utm_keyword, utm_placement, gclid) VALUES ('$v1','$v2','$v3','$v4','$v5','$v6','$v7','$v8','$v9','$v10','$v11','$v12','$v13','$v14','$v15','$v16','$v17','$v18','$v19','$v20','$v21','$v22','$v23','$v24','$v25','$v26','$v27')";
 	$conn->query($sql1);
 	
 }
