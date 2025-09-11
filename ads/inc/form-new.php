@@ -11,7 +11,7 @@ function getUserIP() {
     return $ip;
 }
 $userIP = getUserIP();
-// $userIP = '103.191.183.74';
+// $userIP = '103.191.183.74';   //for local
 $url = "http://ip-api.com/json/$userIP";
 $json = file_get_contents($url);
 $data = json_decode($json, true);
