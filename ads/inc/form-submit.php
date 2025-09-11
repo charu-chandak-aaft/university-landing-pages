@@ -40,8 +40,9 @@ function stateIdtoName($sid)
 @$id_YourName = $_GET['id_YourName'];
 @$id_Email = $_GET['id_Email'];
 @$id_ContactNumber = $_GET['id_ContactNumber'];
-@$id_State = (empty($_GET['id_State'])) ? $id_State = 31 : $id_State = $_GET['id_State'];
-@$id_State = stateIdtoName($id_State);
+// @$id_State = (empty($_GET['id_State'])) ? $id_State = 31 : $id_State = $_GET['id_State'];
+// @$id_State = stateIdtoName($id_State);
+@$id_State = $_GET['id_State'];
 @$id_City = $_GET['id_City'];
 @$id_Edu = $_GET['id_Edu'];
 @$id_Course = base64_decode($_GET['id_Course']);
@@ -99,16 +100,16 @@ if ($sub == 1) {
 
 	$remark = 'LP Lead';
 
-	echo $sesEmail;
-	echo $sesPhone;
-  echo 'ses value';
+// 	echo $sesEmail;
+// 	echo $sesPhone;
+//   echo 'ses value';
 	$getbyemail = GetByEmail($secretKey, $accessKey, $sesEmail);
 	$getbyphone = GetByPhone($secretKey, $accessKey, $sesPhone);
 	echo $getbyemail;
 	echo $getbyphone;
-  InsertFormData($id_YourName, $id_ContactNumber, $id_Email, $id_Course, $id_Edu, $id_State, $id_City, $id_School, $id_PageName, $Otp, $remark, $id_map, $id_utm_source, $id_utm_medium, $id_utm_campaign, $id_utm_content, $id_utm_term, $id_utm_creative, $id_utm_campaignid, $id_utm_adgroupid, $id_utm_creativeid, $id_utm_matchtype, $id_utm_device, $id_utm_network, $id_utm_keyword, $id_utm_placement, $id_gclid);
-echo 'dhjsg';
-die;
+//   InsertFormData($id_YourName, $id_ContactNumber, $id_Email, $id_Course, $id_Edu, $id_State, $id_City, $id_School, $id_PageName, $Otp, $remark, $id_map, $id_utm_source, $id_utm_medium, $id_utm_campaign, $id_utm_content, $id_utm_term, $id_utm_creative, $id_utm_campaignid, $id_utm_adgroupid, $id_utm_creativeid, $id_utm_matchtype, $id_utm_device, $id_utm_network, $id_utm_keyword, $id_utm_placement, $id_gclid);
+// echo 'dhjsg';
+// die;
 	if (!empty($getbyemail) || !empty($getbyphone)) {
 
 		// echo "fdgdf";
