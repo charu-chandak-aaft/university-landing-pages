@@ -157,7 +157,7 @@ if ($sub == 1) {
 		//leadSqCrt($secretKey,$accessKey,$id_YourName,$id_Email,$id_ContactNumber,$id_School,$id_Course,$id_State,$id_City,$id_Edu,$id_utm_source,$id_utm_medium,$id_utm_campaign,$id_utm_keyword,$id_utm_term,$id_utm_campaignid,$id_utm_adgroupid,$id_utm_creativeid,$id_utm_matchtype,$id_utm_device,$id_utm_network,$id_utm_placement,'No',$id_gclid,$id_utm_content);
 		$SourceReferrerURL = $_SESSION['leadUrl']? $_SESSION['leadUrl'] : '';
 		// leadSqCrt($secretKey, $accessKey, $id_YourName, $id_Email, $id_ContactNumber, $id_School, $id_Course, $id_State, $id_City, $id_Edu, $id_utm_source, $id_utm_medium, $id_utm_campaign, $id_utm_keyword, $id_utm_term, $id_utm_campaignid, $id_utm_adgroupid, $id_utm_creativeid, $id_utm_matchtype, $id_utm_device, $id_utm_network, $id_utm_placement, 'No', $id_gclid, $id_utm_content, $SourceReferrerURL, $mx_UTM_Source,$mx_UTM_Medium,$mx_UTM_Keyword,$mx_UTM_creativeid,$mx_UTM_Campaign,$UTM_adgroup,$mx_UTM_adgroup);
-		echo json_encode(['status' => 'success', 'message' => 'Thank you for reaching us. We will contact Shortly ']);
+		// echo json_encode(['status' => 'success', 'message' => 'Thank you for reaching us. We will contact Shortly ']);
 
 	}
 
